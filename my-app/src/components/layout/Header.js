@@ -5,7 +5,7 @@ export class Header extends Component {
     return (
         <header style={headerStyle}>
           <h1 style={hOneStyle}>Click Stuff Game</h1>
-          <p style={pStyles} className={""}>Click on the images below and try not to click on the same image twice.</p>
+          <p style={pStyles} >Click on the images below and try not to click on the same image twice.</p>
         </header>
     )
   }

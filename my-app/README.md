@@ -15,7 +15,7 @@ Architecture:
 - ----> Once the score = 10, the games starts over and the user accumulates a win.
 <hr>
 
-#### UI/UX
+### UI/UX
 
 Colors:<br>
 - Body ***medium grey*** &#10144; #DBDBDB;
@@ -25,6 +25,9 @@ Colors:<br>
 - Score Box ***red*** &#10144; #E52A40
 - Score Box ***green*** &#10144; #8FB757;
 - Score Box ***yellow*** &#10144; #F4EA6B;
+<hr>
+
 #### Notes:
 1. Not sure why, the "src" folder didn't convert to "build". The heroku deployment is working despite that change. -> Need to know why and if that needs a remidy?
 2. I figured out how favicons work and how to insert them into a react site.
+3. Made click counter and reset buttons and that's working

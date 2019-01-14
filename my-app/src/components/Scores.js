@@ -4,11 +4,11 @@ export class Scores extends Component {
   render() {
     return (
       <div className="container">
-        <a style={aStyle}>Scores</a>
-        <a style={scoreBox}>8 </a> 
-        <a style={winStyle}>Wins</a>
-        <a style={scoreBox}>9 </a>
-        <a style={lossStyle}>Losses</a>
+        <a href={"#"} style={aStyle}>Scores</a>
+        <a href={"#"} style={scoreBox}>8 </a> 
+        <a href={"#"} style={winStyle}>Wins</a>
+        <a href={"#"} style={scoreBox}>9 </a>
+        <a href={"#"} style={lossStyle}>Losses</a>
       </div>
     )
   }
