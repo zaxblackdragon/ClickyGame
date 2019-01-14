@@ -2,6 +2,11 @@
   text-align: center;
   margin: 0px;
 }
+.container {
+  margin: 0px;
+  padding: 0px;
+
+}
 body {
   padding: 0px;
   background: #DBDBDB;
@@ -19,5 +24,11 @@ p {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 100%;
   }
 }
