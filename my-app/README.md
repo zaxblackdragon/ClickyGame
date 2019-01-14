@@ -1,4 +1,9 @@
 # Clicky Game
+<br>
+
+### **Deployed on Heroku:**
+[View Site](https://obscure-anchorage-84538.herokuapp.com/)
+<hr>
 
 #### Basic Play:
 The goal is to click on the images without clicking on the same image twice.
