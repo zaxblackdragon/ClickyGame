@@ -22,6 +22,7 @@ Colors:<br>
 - Header ***blue/green*** &#10144;#27C8C1
 - Header ***black*** &#10144; #0F0F0F
 - Header Text ***white*** &#10144; #E9E9E9
+- Score Box ***red*** &#10144; #E52A40
 #### Notes:
 1. Not sure why, the "src" folder didn't convert to "build". The heroku deployment is working despite that change. -> Need to know why and if that needs a remidy?
 2. I figured out how favicons work and how to insert them into a react site.

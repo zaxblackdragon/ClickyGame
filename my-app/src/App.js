@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 // Header component
 import Header from './components/layout/Header';
+// Scores component
+import Scores from './components/Scores';
 
 class App extends Component {
   render() {
@@ -10,6 +12,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <Header />
+          <Scores />
         </div>
       </div>
     );
