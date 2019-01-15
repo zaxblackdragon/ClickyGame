@@ -1,16 +1,47 @@
 import React, { Component } from 'react'
 
+
+let images = [
+  {
+    id: 1,
+    src: './images/cow.jpg',
+  }, 
+  {
+    id: 2,
+    src: './images/cat.png',
+  }, 
+  {
+    id: 3,
+    src: './images/rat.jpeg',
+  },
+  {
+    id: 4,
+    src: './images/donkey.png',
+  }
+
+]
+
 export class ClickBox extends Component {
 
   state = {
-    count: 0,
-  }
+  count: 0,
+  isClick: false,
+}
 
+isClick = (e) => {
+  if(!this.count === 0) {
+    this.setState(({ isClick }) => ({
+      isClick: true,
+      
+    }));
+    console.log('it works');
+  }
+}
 
   clickCounter = (e) => {
     e.preventDefault();
     this.setState(({ count }) => ({
-      count: count + 1
+      count: count + 1,
     }));
   }
   countEmpty = (e) => {
@@ -19,19 +50,7 @@ export class ClickBox extends Component {
       count: 0, 
     }));
   }
-  getStyle = () => {
-    return {
-      background: '#E52A40',
-      color: '#E9E9E9',
-      width: '40px',
-      height: '40px',
-      textAlign: 'center',
-      borderRadius: '10px',
-      paddingTop: '4px',
-      fontSize: '22px',
-      fontWeight: 'bold',
-    }
-  }
+
 
   render() {
     return (
@@ -47,9 +66,17 @@ export class ClickBox extends Component {
             <button onClick={this.clickCounter} style={buttonStyle} >Button Counter</button>
             <button onClick={this.countEmpty} style={buttonStyle} >Reset</button>
           </div>
-        </div>
 
-  
+          <div>
+           { images.map(image => 
+            <button onClick={this.clickCounter}style={{ float: 'left', margin: '10px',}}><img style={{  height: '100px',  }}
+              id={image.id}
+              src={image.src} 
+              />
+            </button>) }
+          </div>
+           
+        </div>
     )
   }
 }

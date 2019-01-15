@@ -25,9 +25,15 @@ Colors:<br>
 - Score Box ***red*** &#10144; #E52A40
 - Score Box ***green*** &#10144; #8FB757;
 - Score Box ***yellow*** &#10144; #F4EA6B;
+
+Images:
+- Stored in public/image folder.
+- Got them to populate to the page and they're running the click counter.
 <hr>
+
 
 #### Notes:
 1. Not sure why, the "src" folder didn't convert to "build". The heroku deployment is working despite that change. -> Need to know why and if that needs a remidy?
 2. I figured out how favicons work and how to insert them into a react site.
-3. Made click counter and reset buttons and that's working
+3. Made click counter and reset buttons and that's working.
+4. I got the images populating dynamically and they increase the click counter every time the are clicked.
